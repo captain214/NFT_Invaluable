@@ -1,0 +1,20 @@
+.favorite-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 6px;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.favorite-icon {
+  margin-right: 6px;
+}
+
+.favorites-count {
+  padding-top: 2px;
+}

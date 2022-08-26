@@ -1,0 +1,121 @@
+.collection {
+  background: var(--black);
+}
+.collection-banner {
+  position: relative;
+  height: 214px;
+  width: 100%;
+}
+.collection-banner-image {
+  height: 214px;
+  width: 100%;
+  object-fit: cover;
+}
+.collection-image-wrapper {
+  width: 132px;
+  height: 132px;
+  position: absolute;
+  left: calc(50% - 132px/2);
+  bottom: -66px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+.collection-image {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  border: 2px solid #E72E17;
+  background: var(--black);
+  overflow: hidden;
+}
+.collection-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 89px;
+}
+.collection-title-text {
+  margin-right: 9px;
+  font-weight: 600;
+  font-size: 37px;
+  color: #FFFFFF;
+}
+.collection-statistic {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+.collection-statistic-tile {
+  height: 87px;
+  width: 140px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #212127;
+  border-radius: 3px;
+  margin-right: 1px;
+  color: #FFFFFF;
+}
+.collection-statistic-tile:last-of-type {
+  margin-right: 0;
+}
+.collection-statistic-tile-value {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+.collection-statistic-tile-value-icon {
+  margin-right: 6px;
+}
+.collection-statistic-tile-title {
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.4;
+}
+.collection-description {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+.collection-assets-header {
+  padding-top: 45px;
+  padding-bottom: 16px;
+  margin: 0 25px 26px;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #212127;
+}
+.collection-assets-header-title {
+  display: flex;
+  align-items: center;
+}
+.collection-assets-header-title-text {
+  margin-left: 9px;
+}
+.collection-assets-header-link {
+  display: flex;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+.collection-assets-header-link-text {
+  padding-right: 7px;
+}
+.collection-assets-container {
+  display: flex;
+  margin: 0 23px 86px;
+}
+.collection-assets-card:not(:last-of-type) {
+    margin-right: 30px;
+}

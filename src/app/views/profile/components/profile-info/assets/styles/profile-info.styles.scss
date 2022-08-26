@@ -1,0 +1,196 @@
+.profile-info {
+  width: 100%;
+  color: var(--white);
+  //padding-top: 0.3em;
+}
+
+.profile-info > * {
+  padding-top: 1.6em;
+}
+
+.profile-info__name-section {
+  --ident-size: 0.8em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 3em;
+  padding-left: var(--ident-size);
+  padding-right: var(--ident-size);
+}
+
+.profile-info__wallet-section {
+  --ident-size: 0.8em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 0.6em;
+  padding-left: var(--ident-size);
+  padding-right: var(--ident-size);
+}
+
+.profile-info__profile-name {
+  background: linear-gradient(86.14deg, #C439DD 0%, #4925E9 105.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #4925E9;
+}
+
+.profile-info__wallet-address {
+  margin-left: 1em;
+  padding: 0.6em;
+  background: #1A1A1A;
+  color: #555555;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile-info__name {
+  margin: 0;
+  font-weight: bold;
+
+  min-height: 0; // hack to make "clamp, min, max" work in safari
+  font-size: clamp(1.4rem, 8vw, 2.2rem);
+}
+
+.profile-info__verified-name-icon {
+  display: flex;
+  align-items: center;
+
+  min-height: 0; // hack to make "clamp, min, max" work in safari
+  padding-left: clamp(0.4em, 1vw, 0.6em);
+}
+.profile-info__edit-profile-button-container {
+  position: relative;
+}
+.profile-info__edit-profile-button {
+  position: absolute;
+  top: -16px;
+  z-index: 10;
+  margin-left: 1em;
+  border:solid 1px #4925E9;
+  background: rgba(255, 255, 255,0);
+  border-radius: 22px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #4925E9;
+  padding: 7px 10px;
+  margin-right: 21px;
+  cursor: pointer;
+}
+.profile-info__edit-profile-button-menu__visible {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.profile-info__info-cards {
+  --column-width: 160px;
+  --column-amount: 4;
+  --gap-size: 1px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--column-width), var(--column-width)));
+  gap: var(--gap-size);
+  max-width: calc((var(--column-amount) * var(--column-width)) + (var(--column-amount) * var(--gap-size)));
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.profile-info__edit-profile-menu {
+  position: absolute;
+  left: -5px;
+  top: -32px;
+  width: 238px;
+  padding: 75px 25px 5px;
+  border-radius: 20px;
+  background: linear-gradient(86.14deg, #C439DD 0%, #4925E9 105.45%);
+  opacity: 0.9;
+  color: #FFFFFF;
+  display: none;
+}
+
+.profile-info__edit-profile-menu-item {
+  display: block;
+  padding: 0;
+  margin-bottom: 26px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.edit-profile-menu__input {
+  color: transparent;
+}
+
+.edit-profile-menu__input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.edit-profile-menu__input::before {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 26px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-user-select: none;
+}
+
+.profile-info__edit-profile-menu-cover::before {
+  content: 'Cover';
+}
+
+.profile-info__edit-profile-menu-profile-pic::before {
+  content: 'Profile Pic';
+}
+
+.profile-info__edit-profile-menu-username::before {
+  content: 'Username';
+}
+
+.profile-info__edit-profile-menu-username-input {
+  padding: 0;
+  margin-bottom: 26px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.profile-info__edit-profile-menu-username-input::placeholder {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-info__name-section {
+    padding-top: 5em;
+  }
+  .profile-info__edit-profile-button {
+    position: relative;
+    top: 25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .profile-info__edit-profile-menu {
+    left: -165px;
+    top: 70px;
+  }
+}

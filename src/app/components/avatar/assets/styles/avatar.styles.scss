@@ -1,0 +1,91 @@
+@mixin rounded-border {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.avatar {
+  @include rounded-border;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey-800);
+  display: block;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+
+.avatar__backtop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar__default-image {
+  @include rounded-border;
+
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(180deg, #608D00 0%, #D30000 72.37%),
+    linear-gradient(58.72deg, #0029FF 0%, #8FFF00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+  background-blend-mode: color-dodge, overlay, difference, normal;
+}
+
+.avatar__image {
+  @include rounded-border;
+
+  display: block;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar__border {
+  border: double 1px transparent;
+  background-image:
+    linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      var(--color-accent-2-500),
+      var(--color-accent-1-500)
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+}
+
+.avatar__glow {
+  --shadow-position: 0px 0px 20px;
+
+  box-shadow: var(--shadow-position) var(--color-accent-2-500);
+  -webkit-box-shadow: var(--shadow-position) var(--color-accent-2-500);
+  -moz-box-shadow: var(--shadow-position) var(--color-accent-2-500);
+}
+
+
+.avatar__icon {
+  --avatar-icon-size: 54%;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: var(--avatar-icon-size);
+  height: var(--avatar-icon-size);
+}

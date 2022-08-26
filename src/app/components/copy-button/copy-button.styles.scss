@@ -1,0 +1,19 @@
+.copy-button {
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border: none;
+
+  cursor: pointer;
+  padding: 0;
+}
+
+.copy-button__input {
+  pointer-events: none;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  padding: 0;
+}

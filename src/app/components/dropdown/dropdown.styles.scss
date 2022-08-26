@@ -1,0 +1,102 @@
+.dropdown-wrapper {
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid transparent;
+
+  &--filled {
+    background: linear-gradient(90deg, #C439DD 0%, #4925E9 100%) border-box;
+  }
+
+  .dropdown-root {
+    position: relative;
+    width: 100%;
+    height: 39px;
+    justify-content: space-between;
+    align-items: center;
+    background: inherit;
+    box-sizing: border-box;
+    border-radius: inherit;
+    padding-left: 11px;
+    padding-right: 16px;
+    font-size: 14px;
+
+    .dropdown-value {
+      min-width: 50px;
+      flex-grow: 1;
+      font-weight: 600;
+      text-align: left;
+      font-size: inherit;
+      color: #ffffff;
+      background: inherit;
+      user-select: none;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      &--empty {
+        opacity: 0.4;
+      }
+    }
+    .dropdown-input:focus-visible {
+      outline: none;
+      cursor: pointer;
+    }
+    .dropdown-btn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .dropdown-arrow {
+      transition: 0.12s;
+      &--up {
+        transform: rotateX(180deg);
+      }
+    }
+    .suggestions {
+      background-color: inherit;
+      position: absolute;
+      top: 42px;
+      right: 0;
+      width: 100%;
+      z-index: 99;
+    }
+    .suggestions-item {
+      display: flex;
+      align-items: center;
+      height: 39px;
+      width: 100%;
+      background: inherit;
+      z-index: 10;
+      font-weight: 600;
+      font-size: inherit;
+      color: #ffffff;
+      border: 1px solid #444444;
+      margin-top: -1px;
+      padding-left: 11px;
+      cursor: pointer;
+    }
+    .suggestions-item-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 12px;
+    }
+
+    &--small {
+      height: 32px;
+      font-size: 13px;
+
+      .suggestions {
+        top: 35px;
+      }
+
+      .suggestions-item {
+        height: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+.item-details-container {
+  background-color: var(--black);
+  flex: 1;
+
+  .main-block {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__left-col {
+      min-width: 400px;
+      margin-right: 30px;
+      flex: 1;
+      flex-shrink: 0;
+    }
+
+    &__right-col {
+      flex: 1.3;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .main-block {
+      flex-direction: column;
+
+      &__left-col {
+        min-width: inherit;
+        width: 100%;
+      }
+
+      &__right-col {
+        flex: 1.3;
+      }
+    }
+  }
+}
+
+.item-details-root {
+  max-width: 1200px;
+  //min-width: 800px;
+  margin: 0 auto;
+  padding: 28px;
+
+  .item-preview {
+    margin-bottom: 20px;
+  }
+
+  .item-description {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .item-about {
+    border-radius: 0;
+  }
+
+  .item-asset-details {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .item-info {
+    margin-bottom: 30px;
+  }
+
+  .item-price-history, .item-listings-wrapper, .item-trading-history {
+    margin-bottom: 20px;
+  }
+  .item-trading-history {
+    &-root {
+      overflow-x: auto;
+    }
+  }
+
+  .item-offerings {
+    padding-top: 20px
+  }
+
+  .item-trading-history, .item-price-history {
+    overflow: unset;
+  }
+
+  .item-more-cards {
+    display: flex;
+    padding: 17px;
+    background-color: var(--black);
+    overflow: auto;
+
+    .more-offer-card {
+      min-width: 300px;
+      &:not(:last-of-type) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .item-more-footer {
+    background-color: var(--mysterious-gray);
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .item-more-btn {
+    border: 1px solid var(--mysteious-pink);
+    border-radius: 4px;
+    background-color: unset;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: inherit;
+  }
+}
+
+.item-about-content {
+  padding: 38px 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  color: white;
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    border-radius: 16px;
+  }
+}
+
+.item-asset-details-content, .item-description-content {
+  padding: 22px 0;
+  background-color: var(--black);
+  color: white;
+}
+
+.item-asset-details-content {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+}
+
+.item-details-sell-btn {
+  width: 220px;
+  height: 48px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: #FE2572;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-details-price-input {
+  margin-left: 5px;
+  width: 130px;
+  height: 48px;
+  padding-left: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-details-input {
+  display: inline-block;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.item-trading-group, .item-common-group {
+  border-radius: 20px;
+  &__btn-list {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.item-trading-group {
+  background-color: #201C21;
+  padding: 20px 15px;
+  overflow-x: auto;
+
+  &__listings {
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+
+  &__btn {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &--selected {
+      background-color: var(--primary-dark-purple);
+
+      &:hover {
+        background-color: var(--primary-dark-purple);
+      }
+    }
+  }
+}
+
+.item-common-group {
+  max-width: 100%;
+  padding: 20px 0;
+
+  &__btn {
+    &:hover {
+      background-color: rgba(32, 28, 33, 0.2);
+      outline: none;
+    }
+
+    &--selected {
+      background-color: #201C21;
+      color: var(--primary-light-purple);
+
+      &:hover {
+        background-color: #201C21;
+      }
+    }
+  }
+}
+
+.property-container {
+  display: flex;
+  margin: 5px 0;
+  overflow-x: auto;
+  max-width: 620px;
+  overflow-y: hidden;
+  padding: 10px 0;
+
+  .property {
+    background:
+            linear-gradient(#000000, #000000) padding-box,
+            linear-gradient(90deg, #7BF1F5 0%, #C439DD 50.52%, #4925E9 101.04%) border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    flex-shrink: 0;
+    height: 100px;
+    margin: 10px 0;
+    padding-bottom: 2px;
+
+
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+
+    &__content {
+      background: black;
+      margin: 1px;
+      text-align: center;
+      border-radius: 10px;
+      height: 100%;
+    }
+
+    &__title, &__value {
+      margin: 0;
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--primary-light-purple);
+    }
+
+    &__value {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      padding-top: 5px;
+    }
+  }
+
+}
+

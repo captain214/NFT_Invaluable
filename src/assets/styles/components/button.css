@@ -1,0 +1,43 @@
+.btn {
+  display: inline-block;
+  padding: 0.68em 1.12em 0.68em 1.12em;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  text-decoration: unset;
+}
+
+/* ======================= btn-primary ======================= */
+
+.btn-primary {
+  color: white;
+  background-color: hsl(339, 99%, 57%);
+  box-shadow: rgb(0 0 0 / 25%) 0px 1px 20px;
+  transition: all 0.2s
+}
+
+.btn-primary:hover {
+  background-color: hsl(339, 99%, 62%);
+}
+
+/*
+  button blur on scale fix (in Chrome):
+  https://www.blackpepper.co.uk/blog/blurry-css-animations-in-chrome-try-this
+*/
+.btn-primary:active {
+  font-size: 1rem;
+  transform: scale(0.94);
+  background-color: hsl(339, 99%, 50%);
+  -webkit-transform: scale(0.94);
+  -moz-transform: scale(0.94);
+  -ms-transform: scale(0.94);
+  -o-transform: scale(0.94);
+}
+/* ======================= btn-primary ======================= */

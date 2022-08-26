@@ -1,0 +1,20 @@
+.item-trading-history-root {
+  .filter-container {
+    border-bottom: 1px solid var(--white);
+
+    .filter {
+      z-index: 9;
+      width: 110px;
+      margin: 20px 0 20px auto;
+      background-color: #201C21;
+    }
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .table-header {
+    color: white;
+  }
+}

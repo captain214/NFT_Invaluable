@@ -1,0 +1,35 @@
+.info-card {
+  color: var(--white);
+  background-color: hsla(240, 8%, 14%, 1);
+  padding: 0.8em 1.2em;
+  // padding: 0 2em;
+  width: 100%;
+  // width: 140px;
+}
+
+.info-card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // justify-content: space-between;
+}
+
+.info-card__icon {
+  display: flex;
+  align-items: center;
+  padding-right: 0.4em;
+}
+
+.info-card__value {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.info-card__description {
+  color: hsla(240, 2%, 48%, 1);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding-top: 0.4em;
+  text-align: center;
+}

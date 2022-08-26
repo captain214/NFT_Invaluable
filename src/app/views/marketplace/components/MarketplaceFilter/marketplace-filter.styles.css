@@ -1,0 +1,81 @@
+.marketplace-filter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 0 0;
+}
+.marketplace-filter-tags {
+  display: flex;
+  justify-content: flex-start;
+}
+.marketplace-filter-tag {
+  height: 39px;
+  background:
+  linear-gradient(#000000, #000000) padding-box,
+  linear-gradient(90deg, #7BF1F5 0%, #C439DD 50.52%, #4925E9 101.04%) border-box;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFFFFF;
+  padding: 0 25px;
+  margin-right: 21px;
+  cursor: pointer;
+}
+.marketplace-filter-tag__active {
+  background:
+  linear-gradient(90deg, #7BF1F5 0%, #C439DD 50.52%, #4925E9 101.04%) padding-box;
+}
+.marketplace-filter-tag:hover {
+  opacity: 0.85;
+}
+.marketplace-filter-btn {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  font-weight: 600;
+}
+.marketplace-filter-btn-icon {
+  margin-right: 11px;
+}
+.marketplace-filters-menu {
+  position: absolute;
+  right: 47px;
+  top: 77px;
+  z-index: 10;
+  width: 238px;
+  padding: 23px 25px 5px;
+  border-radius: 20px;
+  background: linear-gradient(86.14deg, #C439DD 0%, #4925E9 105.45%);
+  opacity: 0.9;
+  color: #FFFFFF;
+  display: none;
+}
+.marketplace-filters-menu__visible {
+  display: block;
+}
+.filters-menu-title {
+  padding-top: 2px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.6;
+}
+.filters-menu-item {
+  display: block;
+  padding: 0;
+  margin-bottom: 26px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  .marketplace-filter {
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,75 @@
+.gradient-button-root {
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 22px;
+  color: white;
+  border: 1px solid transparent;
+  background:
+          linear-gradient(#000000, #000000) padding-box,
+          linear-gradient(90deg, #7BF1F5 0%, #C439DD 50%, #4925E9 100%) border-box;
+
+  &--filled {
+    background: linear-gradient(90deg, #7BF1F5 0%, #C439DD 50%, #4925E9 100%) padding-box;
+  }
+
+  &--loading {
+    background-size: 300% 400%;
+    animation: gradient 5s linear infinite;
+
+    &.gradient-button-root--filled {
+      background: linear-gradient(90deg, #7BF1F5 0%, #C439DD 50%, #4925E9 99%, #7BF1F5 100%) padding-box;
+      background-size: 300% 400%;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    background-color: inherit;
+    border-radius: inherit;
+    flex: 1;
+    border: none;
+    color: white;
+    font-size: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 22px;
+    cursor: pointer;
+    transition: 0.08s;
+    transition-property: opacity;
+  }
+
+  &--disabled {
+    background: grey;
+  }
+
+  &--simple {
+    border: 1px solid #838383;
+    background: #000000;
+  }
+
+  &--small {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 300% 50%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+}
+

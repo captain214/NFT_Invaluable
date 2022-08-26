@@ -1,0 +1,16 @@
+.modal-error {
+  max-width: 350px;
+  text-align: center;
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 18px 0 10px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0 18px;
+  }
+}

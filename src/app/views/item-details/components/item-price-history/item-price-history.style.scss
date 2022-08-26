@@ -1,0 +1,31 @@
+.item-price-history-root {
+  .recharts-text {
+    font-size: 13px;
+    fill: #424247;
+  }
+
+  .custom-tooltip {
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+
+    .tooltip-text {
+      margin: 0;
+    }
+  }
+
+  .filter {
+    z-index: 9;
+    width: 150px;
+    margin: 20px 10px 10px auto;
+    background-color: #201C21;
+  }
+
+  .no-data {
+    text-align: center;
+    padding: 20px;
+    color: var(--light-gray);
+  }
+}

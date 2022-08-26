@@ -1,0 +1,39 @@
+.filter-button-wrapper {
+  width: 94px;
+  height: 44px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+.filter-button-wrapper__dark {
+  background-color: #000000;
+}
+.filter-button-wrapper__dark:hover {
+  background-color: #212127;
+}
+.filter-button-wrapper__light {
+  background-color: #FEFEFE;
+}
+.filter-button-wrapper__light:hover {
+  border: 1px solid #E6E8EB;
+}
+.filter-button-text {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 11px;
+}
+.filter-button-text__dark {
+  color: #ffffff;
+}
+.filter-button-text__light {
+  color: #212127;
+}
+.is-active__dark {
+  background-color: #212127;
+}
+.is-active__light {
+  border: 1px solid #FE2572 !important;
+}

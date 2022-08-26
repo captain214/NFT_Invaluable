@@ -1,0 +1,36 @@
+.streak-table {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  border-spacing: 0;
+
+  th {
+    font-weight: normal;
+  }
+
+  thead {
+    th, td {
+      padding: 20px 10px 20px 15px;
+      white-space: pre;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 12px 10px 12px 15px;
+      white-space: pre;
+    }
+
+    tr:last-child td {
+      border: 0;
+    }
+  }
+
+  th, td {
+    border-bottom: 1px solid #aaaaaa;
+  }
+
+  tr:last-child {
+    border-bottom: unset;
+  }
+}

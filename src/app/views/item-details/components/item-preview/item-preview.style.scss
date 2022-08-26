@@ -1,0 +1,27 @@
+.item-preview {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mysterious-gray);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 100%;
+
+    &__image-wrapper {
+      margin: 0 auto;
+      min-height: 0;
+    }
+
+    &__image {
+      height: 100%;
+      width: 100%;
+      object-fit: scale-down;
+      padding: 0 15px;
+    }
+}
+
+.item-preview-video {
+  width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,32 @@
+/*
+  надо бы подогнать размеры контейнера под дизайн проекта, а то они немного расходятся(
+  TODO: нужно заменить размеры px в padding на em!
+  TODO: ещё нужно заменить px в @media на rem!
+*/
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    padding: 0 calc(50% - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    padding: 0 calc(50% - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    padding: 0 calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    padding: 0 calc(50% - 590px);
+  }
+}

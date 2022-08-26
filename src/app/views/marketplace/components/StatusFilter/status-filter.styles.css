@@ -1,0 +1,27 @@
+.status-filter {
+  padding: 24px 25px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 9px;
+  column-gap: 8px;
+}
+.status-filter-btn {
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #E6E8EB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #212127;
+  cursor: pointer;
+  padding-left: 14px;
+  text-align: left;
+}
+.status-filter-btn__active {
+  background: #FE2572;
+  border: 1px solid #E6E8EB;
+  color: #FFFFFF;
+}

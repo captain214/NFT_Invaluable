@@ -1,0 +1,67 @@
+.join-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.39);
+  z-index: 99;
+  position: fixed;
+  inset: 0;
+
+  .join-modal-content {
+    color: white;
+    //border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 114px rgba(196, 57, 221, 0.5);
+    max-width: 600px;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        86.14deg, #C439DD 0%, #4925E9 105.45%);
+    overflow: initial;
+    position: absolute;
+    outline: none;
+    padding: 75px 20px 65px;
+    animation: modal-enter 0.35s ease-out;
+    width: 100%;
+  }
+
+  .modal-basic-close-btn {
+    position: absolute;
+    top: -28px;
+    right: -30px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: var(--primary-dark-purple);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      background-color: #3A1EBA;
+    }
+  }
+
+  @keyframes modal-enter {
+    from {
+      opacity: 0.75;
+      transform: translate(-50%, -45%)
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%)
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join-modal-overlay {
+    .modal-basic-close-btn {
+      top: -35px;
+      right: 10px;
+    }
+  }
+}

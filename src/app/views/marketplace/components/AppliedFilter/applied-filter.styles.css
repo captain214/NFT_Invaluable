@@ -1,0 +1,21 @@
+.applied-filter-container {
+  display: flex;
+  align-items: center;
+  height: 47px;
+  padding: 0 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #FE2572;
+  border-radius: 4px;
+}
+.applied-filter-title {
+  margin-right: 17px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #212127;
+}
+.applied-filter-btn {
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}

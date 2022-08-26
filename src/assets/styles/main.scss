@@ -1,0 +1,51 @@
+@use './variables/_colors.scss' as colors;
+@use './variables/_gradients.scss' as gradients;
+
+@use './config/config.scss' as *;
+@use './fonts/fonts.scss' as *;
+
+@use './components/link.scss' as *;
+
+html, body, #root {
+  --primary-font: 'Montserrat', sans-serif;
+
+  font-family: var(--primary-font);
+  background-color: var(--color-grey-900);
+}
+
+body {
+  min-height: 100%;
+}
+
+// this is temporary solution, remove it later!
+input:focus, textarea:focus, select:focus, button:focus, a:focus {
+  outline: none;
+}
+
+:root {
+  // delete this variables latter!
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(210, 13%, 91%);
+  --light-gray: hsl(210, 100%, 99%);
+  --black: hsl(0, 0%, 0%);
+  --blue: hsl(209, 81%, 55%);
+  --mysterious-gray: #212127;
+  --accent-gray: #2B2B2F;
+  --mysteious-pink: #FE2572;
+  --opacity-gray: #70707010;
+
+  --primary-light-blue: #7BF1F5;
+  --primary-light-purple: #C439DD;
+  --primary-dark-purple: #4925E9;
+  --primary-gradient: linear-gradient(90deg, #7BF1F5 0%, #C439DD 50%, #4925E9 100%);
+
+  @each $color, $shades in colors.$list {
+    @each $shade, $value in $shades {
+      --color-#{"" + $color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $gradient-name, $gradient-value in gradients.$list {
+    --gradient-#{$gradient-name}: #{$gradient-value};
+  }
+}

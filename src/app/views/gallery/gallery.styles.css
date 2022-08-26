@@ -1,0 +1,16 @@
+.gallery__main {
+  background-color: var(--gray);
+}
+
+.gallery-header__nav {
+  --nav-header-height: 69px;
+
+  height: var(--nav-header-height);
+  background-color: #000000;
+}
+
+.gallery__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.loading-background {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-height: calc(100vh - 98px);
+
+  &__text {
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+
+  &__spinner {
+    height: 100px;
+    width: 100px;
+  }
+}

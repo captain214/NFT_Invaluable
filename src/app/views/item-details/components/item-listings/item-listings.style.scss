@@ -1,0 +1,47 @@
+.item-listings-root {
+  table {
+    width: 100%;
+    text-align: left;
+    color: white;
+  }
+
+  td {
+    white-space: pre;
+  }
+
+  .buy-btn {
+    margin-top: 5px;
+    white-space: pre;
+  }
+
+  .token-image {
+    height: 17px;
+    margin-right: 6px;
+    vertical-align: text-top;
+  }
+
+  .no-data {
+    text-align: center;
+    padding: 20px 0 10px;
+    color: var(--light-gray);
+  }
+
+  .price-cell {
+    white-space: pre;
+  }
+
+}
+
+.item-listings-footer {
+  width: 100%;
+
+  .sell-btn {
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light-gray);;
+    background-color: var(--mysterious-gray);
+    border: 1px solid black;
+  }
+}

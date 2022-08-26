@@ -1,0 +1,141 @@
+.modal-mint {
+  min-width: 300px;
+  max-width: 360px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0 20px;
+  }
+
+  &__subtitle-bold {
+    font-weight: 700;
+  }
+
+  &__input-group {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    &--darken {
+      opacity: 0.3;
+    }
+  }
+
+  &__max-purchase-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  &__price {
+    flex: 1;
+    border-left: 2px solid white;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__price-value {
+    width: calc(100% - 30px);
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+
+  &__price-icon {
+    margin-right: 4px;
+  }
+
+  &__quantity {
+    display: flex;
+    flex: 2;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  &__quantity-value {
+    width: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    user-select: none;
+  }
+
+  &__quantity-minus, &__quantity-plus {
+    cursor: pointer;
+  }
+
+  &__quantity-available {
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    top: -22px;
+    opacity: 0.5;
+  }
+
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 0;
+    font-size: 14px;
+    font-weight: 700;
+    user-select: none;
+  }
+
+  &__subtotal-title {
+    opacity: 0.4;
+
+    &--darken {
+      opacity: 0.2;
+    }
+  }
+
+  &__confirm {
+    width: 100%;
+
+    &--darken {
+      opacity: 0.3;
+    }
+  }
+}
+
+.modal-mint-complete {
+  min-width: 320px;
+  text-align: center;
+  padding: 0 15px;
+
+  &__btn-group {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 0 16px;
+  }
+
+  &__view-nfts-btn {
+    white-space: pre;
+    margin-right: 15px;
+  }
+
+  &__transaction-btn {
+    width: 100%;
+    background-color: #201C21;
+  }
+}

@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use './_colors.scss' as colors;
+
+$deg-of-90: 90deg;
+
+$list: (
+  1: linear-gradient(
+    $deg-of-90,
+    map.get(colors.$list, accent-2, 500) 0%,
+    map.get(colors.$list, accent-1, 500) 101.04%,
+  ) padding-box,
+
+  2: linear-gradient(
+    $deg-of-90,
+    map.get(colors.$list, accent-3, 500) 0%,
+    map.get(colors.$list, accent-1, 500) 101.04%
+  ) padding-box,
+
+  3: linear-gradient(
+    $deg-of-90,
+    map.get(colors.$list, accent-3, 500) 0%,
+    map.get(colors.$list, accent-2, 500) 50.52%,
+    map.get(colors.$list, accent-1, 500) 101.04%,
+  ) padding-box,
+
+  4: linear-gradient(
+    -$deg-of-90,
+    map.get(colors.$list, accent-3, 500) 0%,
+    map.get(colors.$list, accent-2, 500) 50.52%,
+    map.get(colors.$list, accent-1, 500) 101.04%
+  ) padding-box,
+);

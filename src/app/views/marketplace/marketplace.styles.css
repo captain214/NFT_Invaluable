@@ -1,0 +1,116 @@
+.marketplace-container {
+  background-color: #000000;
+  max-width: 1335px;
+  margin: 0 auto;
+  padding: 20px 0 80px;
+}
+
+.marketplace-card-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
+  gap: 15px;
+  margin-top: 42px;
+  padding: 0 47px;
+  padding-bottom: 2.2em;
+}
+.marketplace-offer-card {
+  justify-self: center;
+}
+
+.marketplace-bottom {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.marketplace-load-btn {
+  display: block;
+  height: 58px;
+  width: 100%;
+  max-width: 1334px;
+  margin-bottom: 4.4em;
+  background:
+  linear-gradient(#000000, #000000) padding-box,
+  linear-gradient(90deg, #7BF1F5 0%, #C439DD 50.52%, #4925E9 101.04%) border-box;
+  border: 1px solid transparent;
+  border-radius: 72px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.marketplace-load-btn:hover {
+  background:
+  linear-gradient(90deg, #7BF1F5 0%, #C439DD 50.52%, #4925E9 101.04%) padding-box;
+}
+.marketplace-section-title {
+  display: flex;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 25px;
+  padding-left: 47px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.marketplace-section-title > img {
+  margin-right: 9px;
+}
+
+.marketplace-container .tall-block {
+  background: linear-gradient(81.31deg, #7BF1F5 -0.51%, #C439DD 50.23%, #4925E9 100.97%);
+}
+.marketplace-container .tall-block .player1-img {
+  max-width: 200px;
+  margin-left: 50px;
+}
+.marketplace-container .tall-block .big-heading {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.marketplace-container .tall-block .body-4 {
+  margin-bottom: 0;
+}
+.marketplace-container .tall-block .btn-block {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .marketplace-container .tall-block {
+    margin: 0 20px;
+  }
+  .marketplace-container .tall-block .small-heading {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .marketplace-container .tall-block .big-heading {
+    font-size: 45px;
+  }
+  .marketplace-container .tall-block .body-4 {
+    margin-bottom: 30px;
+  }
+  .marketplace-container .tall-block .btn-block {
+    text-align: left;
+  }
+  .marketplace-load-btn {
+    max-width: 340px;
+  }
+  .marketplace-card-board {
+    margin: 40px 20px 0;
+  }
+  .marketplace-offer-card {
+    width: 100% !important;
+  }
+  .marketplace-filter-tag {
+    padding: 0 15px !important;
+  }
+  .marketplace-filter-tags .marketplace-filter-tag:first-of-type {
+    min-width: 85px;
+    padding: 0 10px !important;
+  }
+  .marketplace-filters-menu {
+    right: 15px !important;
+  }
+}

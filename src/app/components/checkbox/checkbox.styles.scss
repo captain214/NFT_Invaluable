@@ -1,0 +1,13 @@
+.streak-checkbox-root {
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  fill: none;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+
+  &--checked {
+    fill: white;
+  }
+}
